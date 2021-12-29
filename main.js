@@ -2,31 +2,44 @@
 
 const btn = document.querySelector('.wirte__btn');
 const input = document.querySelector('.wirte__input');
-
 const list = document.querySelector('.list__el');
-const checkboxStyle = document.querySelector('.checkboxStyle');
-
-const checkbox = document.createElement('input');
-const contents = document.createElement('li');
-const contents_input = document.createElement('button');
-
-console.log(checkboxStyle);
+const listStyle = document.querySelector('.list__el_item');
+const deleteIcon = document.querySelector('.list__el__delete');
 
 
-
-// btn 클릭  + enter key -> list__el에 li 요소가 append 
-//btn 정의, li element 생성, input 정의
-
-
+        // append the li element and delete icon 
 function addTask(){
     if( input.value == ''){
         alert('Please enter your daily task !');
     }else{
+        const contents = document.createElement('li');
+        const del = document.createElement('div');
+        const delIcon = document.createElement('i');
+
         contents.innerHTML = input.value;
         list.appendChild(contents);
-        list.appendChild(checkbox);
-        checkbox.classList.add('checkboxStyle');
+        contents.classList.add('list__el_item');
+
+        del.classList.add('list__el__delete');
+        del.appendChild(delIcon);
+        delIcon.classList.add('far');
+        delIcon.classList.add('fa-trash-alt');
+        list.appendChild(del);
+
         input.value = '';
+
+        // checked function
+        contents.addEventListener('click', () => {
+            contents.classList.toggle('checked');
+        });
+
+         // Delete the element
+        delIcon.addEventListener('click', () =>{
+            alert(' Do you want to delete things to do? ');
+            delIcon.parentNode.previousSibling.remove();
+            delIcon.remove();
+            
+        }); 
     }
     
 
@@ -37,3 +50,6 @@ input.addEventListener('keydown', (e) => {
         addTask();
     }
     });
+
+
+
