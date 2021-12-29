@@ -1,4 +1,4 @@
-# Games-in-Javascript    
+# To-do List in javascript
 
 ## 📅 Project Name : To-do List
 * html/css/vanilla javascript로 만든 할일 목록 리스트 입니다.
