@@ -38,7 +38,6 @@ function addTask(){
             alert(' Do you want to delete things to do? ');
             delIcon.parentNode.previousSibling.remove();
             delIcon.remove();
-            
         }); 
     }
     
