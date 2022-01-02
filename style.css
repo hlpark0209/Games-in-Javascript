@@ -82,10 +82,12 @@ body{
     position: relative;
     height: 642px;
     padding: 0px 30px;
+
 }
 
 /* day */
 .day{
+    position: relative;
     height: 125px;
 }
 .day__date{
@@ -104,7 +106,11 @@ body{
     font-size: var(--font-small);
     font-weight: var(--weight-light);
 }
-
+.fa-redo-alt{
+    position: absolute;
+    top: 87px;
+    right: 20px;
+}
 
 
 
@@ -113,6 +119,7 @@ body{
 /* list */
 .list{
     height: 405px;
+    overflow-y: auto;
 }
 .list__el_item{
     display: inline-block;
@@ -168,7 +175,7 @@ body{
 }
 .list__el__delete{
     float: right;
-    margin-top: 16px;
+    margin: 16px 18px 0px 0px;
     color: var(--color-lightgray);
     font-size: 20px;
     cursor: pointer;

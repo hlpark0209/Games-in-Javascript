@@ -5,6 +5,7 @@ const input = document.querySelector('.wirte__input');
 const list = document.querySelector('.list__el');
 const listStyle = document.querySelector('.list__el_item');
 const deleteIcon = document.querySelector('.list__el__delete');
+const allClear = document.querySelector('.fa-redo-alt');
 
 
         // append the li element and delete icon 
@@ -27,6 +28,9 @@ function addTask(){
         list.appendChild(del);
 
         input.value = '';
+        contents.scrollIntoView( {block:'center'});
+
+
 
         // checked function
         contents.addEventListener('click', () => {
@@ -35,13 +39,18 @@ function addTask(){
 
          // Delete the element
         delIcon.addEventListener('click', () =>{
-            alert(' Do you want to delete things to do? ');
+            alert(' Do you want to delete a daily task? ');
             delIcon.parentNode.previousSibling.remove();
             delIcon.remove();
         }); 
     }
-    
 
+    // clear all li element
+        // allClear.addEventListener('click', () =>{
+        //     alert('Do you want to delete all daily task?');
+        //     list.innerHTML = '';
+        // }); 
+    
 }
 btn.addEventListener('click', addTask);
 input.addEventListener('keydown', (e) => {
@@ -50,5 +59,7 @@ input.addEventListener('keydown', (e) => {
     }
     });
 
+    
+    
 
 
