@@ -3,7 +3,12 @@
 const item = document.querySelector('.items');
 const inputItem = document.querySelector('.footer__input');
 const addBtn = document.querySelector('.footer__btn');
+const form = document.querySelector('.new__form');
 
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    onAdd();
+});
 
 
 function onAdd () {
@@ -73,11 +78,24 @@ function createItem(text) {
 
 }
 
-inputItem.addEventListener ('keypress', (e) =>{
-    if ( e.key === 'Enter'){
-        onAdd();
-    }
-});
+// inputItem.addEventListener ('keypress', (e) =>{
+//     if ( e.key === 'Enter'){
+//         onAdd();
+//     }
+// });
+
+
+
+//keydown 과 keyup 구분
+// 두번 발생할때 : isComposing
+// inputItem.addEventListener ('keydown', (e) =>{
+//     if ( e.key === 'Enter'){
+//         onAdd();
+//     }
+// });
+
+
+
 
 item.addEventListener('click', e => {
     const id = e.target.dataset.id;
