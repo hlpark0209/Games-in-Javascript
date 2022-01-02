@@ -5,7 +5,7 @@
 
 
 ## 📱 Preview
-<img width="90%" src="https://github.com/hlpark0209/To-do-List-in-javascript/blob/main/To-do%20List_GIF.gif"/>
+<img width="100%" src="https://github.com/hlpark0209/To-do-List-in-javascript/blob/main/To-do%20List_GIF.gif"/>
 
 
 
