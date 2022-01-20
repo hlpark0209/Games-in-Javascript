@@ -1,4 +1,4 @@
-# To-do List in javascript
+# To-do List
 
 ## 📅 Project Name : To-do List
 * html/css/vanilla javascript로 만든 할일 목록 리스트 입니다.
@@ -13,17 +13,17 @@
 <br/>
 
 ## 🎨 UI Design Concept
-```
+
 * 가로 사이즈를 487px로 중앙고정
 * 모든 아이콘은 fontawsome 사용
-```
+
 
 ## ⌨️ Using Skills
-```
+
 * HTML    
 * CSS    
 * JAVASCRIPT    
-```
+
 <br/>
 
 ## 📑 Functional List
@@ -38,8 +38,8 @@
 <br/>
 
 ## ☑️ Improvements
-```
+
 * '모두 삭제하기 버튼' 클릭 시, 모든 요소 삭제 기능 추가
 * 디자인 및 ui/ux 개선 필요
-```
+
 <br/>
